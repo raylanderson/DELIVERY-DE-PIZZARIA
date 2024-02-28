@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 3rem 7%;
+}
+
 .btn {
     display: inline-block;
     font-size: 1.7rem;
@@ -210,6 +214,9 @@ html {
     margin: 1rem 0;
 }
 
+
+
+/*SLIDE*/
 .msflix-destaque {
     padding: 0;
 }
@@ -309,7 +316,43 @@ html {
     background-color: red;
 }
 
+/* DESTAQUE */
+.destaque .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
 
+.destaque .box-container .box {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: red;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.destaque .box-container .box .msimg {
+    width: 100%;
+}
+
+.destaque .box-container .box .msimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque .box-container .box .content {
+    padding: 2rem;
+}
+
+.destaque .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+/* CELULAR */
 @media(max-width:991px) {
     html {
         font-size: 55%;
