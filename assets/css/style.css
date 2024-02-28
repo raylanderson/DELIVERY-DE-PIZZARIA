@@ -18,6 +18,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.btn {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: red;
+    background: none;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border: 1px solid red;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: red;
+    color: #fff;
+}
+
 /* INICIO CABEÇALHO DO SITE GITHUB.COM/RAYLANDERSON*/
 .topo-site {
     display: flex;
@@ -44,3 +61,324 @@ html {
     padding-right: .5rem;
     rotate: 175deg;
 }
+
+.topo-site .menu-site a {
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+
+.topo-site .menu-site a:hover {
+    color: yellow;
+}
+
+
+.topo-site .icons div {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+
+.topo-site .icons div:hover {
+    color: yellow;
+}
+
+#menu {
+    display: none;
+}
+
+.topo-site .carrinho {
+    width: 35rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    padding: 2rem;
+}
+
+.topo-site .carrinho.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.topo-site .carrinho .box {
+    position: relative;
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.topo-site .carrinho .box .fa-times {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.topo-site .carrinho .box .fa-times:hover {
+    color: red;
+}
+
+.topo-site .carrinho .box img {
+    height: 10rem;
+}
+
+.topo-site .carrinho .box .content h3 {
+    font-size: 1.7rem;
+    padding-bottom: .5rem;
+    color: #130f40;
+}
+
+
+.topo-site .carrinho .box .content span {
+    font-size: 1.7rem;
+    color: #777;
+}
+
+
+.topo-site .carrinho .box .content span.multiplica {
+    margin: 0 .5rem;
+}
+
+.topo-site .carrinho .total {
+    font-size: 2.2rem;
+    color: #130f40;
+    text-align: center;
+}
+
+.topo-site .carrinho .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.topo-site .login-form {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    width: 35rem;
+    padding: 2rem;
+}
+
+.topo-site .login-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.topo-site .login-form h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+    text-align: center;
+}
+
+.topo-site .login-form .box {
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-transform: none;
+    color: #130f40;
+}
+
+.topo-site .login-form .lembrar-senha {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+
+}
+
+.topo-site .login-form .lembrar-senha label {
+    font-size: 1.5rem;
+    color: #777;
+    cursor: pointer;
+}
+.topo-site .login-form .btn {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.msflix-destaque {
+    padding: 0;
+}
+
+.msflix-destaque .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.msflix-destaque .slide .content {
+    /* display: none; */
+    width: 60rem;
+    text-align: center;
+}
+
+.msflix-destaque .slide .content h3 {
+    font-size: 6rem;
+    line-height: 1.3;
+    color: #fff;
+    padding: 2rem 0;
+    animation: sliderMaykon 1s ease forwards;
+}
+
+.msflix-destaque .slide .content span {
+    color: yellow;
+}
+
+.msflix-destaque .slide .content .btn {
+    background-color: red;
+    color: #fff;
+}
+
+.msflix-destaque .slide .content .btn:hover {
+    background-color: yellow;
+    color: #130f40;
+    border: none;
+    animation: sliderReveal 1s ease forwards;
+}
+
+
+.msflix-destaque .swiper-slide.active .content {
+    display: inline-block;
+}
+
+.msflix-destaque .swiper-slide.active {
+    animation: msflixScale 4s linear forwards;
+}
+
+@keyframes sliderMaykon {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes msflixScale {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    margin-left: 1.5rem;
+    color: red;
+    border: .1rem solid red;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem;
+    }
+
+    .topo-site {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    .topo-site .icons #menu {
+        display: inline-block;
+    }
+
+    .topo-site .menu-site {
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 30rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+    }
+
+    .topo-site .menu-site.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .topo-site .menu-site a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+    }
+
+    .msflix-destaque .slide .content h3 {
+        font-size: 4rem;
+    }
+
+    .topo-site .menu-site a {
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
+
+
+}
+
+
+@media(max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .msflix-destaque .slide .content h3 {
+        font-size: 3.5rem;
+    }
+
+    .topo-site .menu-site a {
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
+}
+
+
