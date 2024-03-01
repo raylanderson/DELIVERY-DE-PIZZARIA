@@ -393,8 +393,116 @@ section {
 /* LOJA MSFLIX */
 .loja .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     gap: 2.5rem;
+}
+
+.loja .box-container .box {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.loja .box-container .box img {
+    height: 29rem;
+    transition: .4s linear;
+}
+
+.loja .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+
+.loja .box-container .box h3 {
+    color: #130f40;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+.loja .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.loja .box-container .box .estrelas {
+    padding: 1rem 0;
+}
+
+
+.loja .box-container .box .estrelas i {
+    font-size: 1.7rem;
+    color: gold;
+}
+
+
+.loja .box-container .box .loja-valor {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+    color: #130f40;
+}
+
+.loja .box-container .box .loja-valor span {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+/* EMPRESA */
+.empresa {
+    background-color: red;
+}
+
+.empresa .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background: red;
+    align-items: center;
+}
+
+.empresa .row .empresa-img {
+    flex: 1 1 32rem;
+}
+
+.empresa .row .empresa-img img {
+    width: 100%;
+    box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.empresa .row .content {
+    flex: 1 1 50rem;
+}
+
+.empresa .row .content h3 {
+    font-size: 3.5rem;
+    color: #fff;
+
+}
+
+.empresa .row .content h3 span {
+    color: yellow;
+}
+
+.empresa .row .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 2;
+    text-align: justify;
+}
+
+.empresa .btn {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.empresa .btn:hover {
+    background-color: #fffb00;
+    color: #130f40;
+    border: 1px solid #130f40;
 }
 
 /* CELULAR */
