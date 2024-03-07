@@ -505,6 +505,72 @@ section {
     border: 1px solid #130f40;
 }
 
+/* BLOG */
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+}
+
+.blogs .box-container .box {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.blogs .box-container .box {
+    height: 29rem;
+    transition: .4s linear;
+}
+
+.blogs .box-container .box:hover {
+    transform: scale(1.1);
+}
+
+.blogs .box-container .box img {
+    width: 100%;
+    height: 25rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .icons {
+    display: inline-block;
+    top: -2rem;
+    background: red;
+    padding: 1rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.blogs .box-container .box .icons a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.blogs .box-container .box .icons a:hover {
+    color: yellow;
+}
+
+.blogs .box-container .box .icons a i {
+    color: #130f40;
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box h3 {
+    font-size: 2rem;
+    color: #130f40;
+}
+
+.blogs .box-container .box p {
+    color: #777;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
 /* CELULAR */
 @media(max-width:991px) {
     html {
