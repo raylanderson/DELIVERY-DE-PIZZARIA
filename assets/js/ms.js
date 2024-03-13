@@ -14,6 +14,11 @@ document.querySelector("#login").onclick = () => {
     carrinho.classList.remove('active');
 }
 
+window.onscroll = () => {
+    carrinho.classList.remove('active');
+    login.classList.remove('active');
+}
+
 
 var swiper = new Swiper(".home-slider", {
 
