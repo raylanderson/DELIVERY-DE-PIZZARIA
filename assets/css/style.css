@@ -728,7 +728,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 38rem;
+    flex: 1 1 50rem;
     gap: 1rem;
     background-color: #eee;
     padding: 2rem;
@@ -756,8 +756,6 @@ section {
     font-size: 2.2rem;
     color: red;
 }
-
-.menu .slider .box-container .box 
 
 
 
